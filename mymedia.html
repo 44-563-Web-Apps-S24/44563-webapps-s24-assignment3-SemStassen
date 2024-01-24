@@ -68,5 +68,41 @@
         <td>yuvah Noah Harari</td>
       </tr>
     </table>
+
+    <hr />
+
+    <p>
+      Below is a snippet of pyhton code, allowing for the creation of abstract
+      classes. It allows testing of objects to see if they adhere to specific
+      specifications.
+    </p>
+    <pre>
+    from abc import ABCMeta, abstractmethod
+
+
+    class BaseClass(metaclass=ABCMeta):
+        @abstractmethod
+        def foo(self):
+            pass
+
+        @abstractmethod
+        def bar(self):
+            pass
+
+
+    class ConcreteClass(BaseClass):
+        def foo(self):
+            pass
+
+        def bar(self):
+            pass
+
+
+    instance = ConcreteClass() 
+    </pre>
+    <p>
+      Source:
+      <a href="https://code.pieces.app/collections/python">Code pieces</a>
+    </p>
   </body>
 </html>
